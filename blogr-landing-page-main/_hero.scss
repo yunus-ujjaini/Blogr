@@ -1,0 +1,115 @@
+.hero{
+    margin: 2rem 0rem;
+    padding: 7rem 0rem;
+    &head{
+        text-align: center;
+        font-size: 2rem;
+        color: var(--White);
+        line-height: 120%;
+    }
+    &sub{
+        text-align: center;
+        font-size: 1.2rem;
+        color: var(--White);
+        line-height: 120%;
+        font-weight: 300;
+        margin: 2rem 1rem;
+    }
+    &action{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            width: 12rem;
+            margin: 1rem 0.5rem;
+            padding: 0.8rem 0rem;
+            border-radius: 60px;
+        }
+        .btn1{
+            background:linear-gradient(to left,white 50%,var(--VeryLightRed) 50%);
+            background-size: 200%;
+            background-position: right;
+            border: 1px solid var(--White);
+            color: var(--LightRed);
+            font-weight: 700;
+            transition: all 0.5s;
+            &:hover{
+                cursor: pointer;
+                background-position: left;
+                border: 1px solid var(--VeryLightRed);
+                color: var(--White);
+            }
+        }
+        .btn2{
+            background:linear-gradient(to left,transparent 50%,var(--White) 50%);
+            background-size: 200%;
+            background-position: right;
+            border: 1px solid var(--White);
+            color: var(--White);
+            font-weight: 700;
+            transition: all 0.5s;
+            &:hover{
+                cursor: pointer;
+                background-position: left;
+                color: var(--LightRed);
+            }
+        }
+    }
+}
+@media only screen and (min-width: 800px) {
+    .hero{
+        margin: 2rem 0rem;
+        padding: 7rem 0rem;
+        &head{
+            text-align: center;
+            font-size: 4rem;
+            color: var(--White);
+            line-height: 120%;
+            #hero-break{
+                display: none;
+            }
+        }
+        &sub{
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--White);
+            line-height: 120%;
+            font-weight: 300;
+            margin: 2rem 1rem;
+        }
+        &action{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+                width: 12rem;
+                margin: 1rem 0.5rem;
+                padding: 0.8rem 0rem;
+                border-radius: 60px;
+            }
+            .btn1{
+                
+                border: 1px solid var(--White);
+                color: var(--LightRed);
+                font-weight: 700;
+                &:hover{
+                    cursor: pointer;
+                   
+                    border: 1px solid var(--VeryLightRed);
+                    color: var(--White);
+                }
+            }
+            .btn2{
+                background-color: transparent;
+                border: 1px solid var(--White);
+                color: var(--White);
+                font-weight: 700;
+                &:hover{
+                    cursor: pointer;
+                    color: var(--LightRed);
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,95 @@
+.section2{
+    width: 100vw;
+    background: url("images/bg-pattern-circles.svg"), var(--BgGradient2);
+    background-repeat: no-repeat;
+    
+    background-size: 160%;
+    background-position-y: -250px;
+    background-position-x: 50%;
+    // background-position: -100%;
+    // margin: 40vw 0rem;
+    margin-top: 40vw;
+    position: relative;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    img{
+        position: absolute;
+        width: 100%;
+        // transform: translateY(-50%);
+        // background-color: yellow;
+        left: 0px;
+        right: 0px;
+        transform: translateY(-50%);
+    }
+    .section2-content{
+        color: var(--White);
+        padding-top: 60vw;
+        text-align: center;
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .content-head
+        {
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+        .content-text{
+            margin-top: 2rem;
+            width: 90%;
+            font-size: 1rem;
+            color: var(--GrayishBlue);
+            margin-bottom: 3rem;
+
+        }
+    }
+}
+@media only screen and (min-width: 980px) {
+    .section2{
+        background: url("images/bg-pattern-circles.svg"), var(--BgGradient2);
+        background-repeat: no-repeat;
+        height: 30vw;
+        background-size: 80%;
+        background-position-y: -550px;
+        background-position-x: -20vw;
+        // background-position: -100%;
+        margin-top: 2vw;
+        // margin: 2vw 0rem;
+        position: relative;
+        display: flex;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        img{
+            position: relative;
+            width: auto;
+            height: 40vw;
+            margin-left: 10vw;
+            transform: translateY(-10%);
+        }
+        .section2-content{
+            width: 40%;
+            margin-left: 5%;
+            color: var(--White);
+            padding-top: 0vw;
+            text-align: left;
+            padding: 15vw 0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            .content-head
+            {
+                text-align: left;
+                font-weight: 700;
+                font-size: 2.5rem;
+            }
+            .content-text{
+                margin-top: 2rem;
+                width: 90%;
+                font-size: 1rem;
+                color: var(--GrayishBlue);
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import 'reset';
+@import 'fonts';
+@import 'style';
+@import 'nav';
+@import 'hero';
+@import 'section1';
+@import 'section2';
+@import 'section3';
+@import 'footer';
+@import 'preloader';
+html {
+    overflow: visible;
+}
+body{
+    overflow: visible;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    background-color: var(--White);
+    position: relative;
+}
+header{
+    background:url('images/bg-pattern-intro.svg'), linear-gradient(to bottom,var(--BgGradient),var(--BgGradientend));
+    background-repeat: no-repeat;
+    background-position-x:35%;
+    background-position-y:35%;
+    background-size: 300%;
+    padding: 2rem;
+    border-bottom-left-radius: 100px;
+}
+
+@media only screen and (min-width: 800px) {
+    header{
+        background:url('images/bg-pattern-intro.svg'), linear-gradient(to right,var(--BgGradient),rgb(250, 24, 24));
+        background-repeat: no-repeat;
+        background-position: 30%;
+        background-size: 200%;
+        padding: 2rem 10vw;
+    }
+}

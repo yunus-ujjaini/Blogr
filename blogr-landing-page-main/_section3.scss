@@ -1,0 +1,117 @@
+.section3{
+    padding: 2rem 1rem;
+    width: 100%;
+}
+.section3-main{
+    width: 100%;
+    &img{
+        width: 100%;
+        margin: 2rem 0rem;
+        img{
+            width: 100%;
+        }
+    }
+}
+.section3-maincontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .content{
+        margin: 1rem 0rem;
+        width: 90%;
+        &-head{
+            color: var(--VeryDarkBlue);
+            text-align: center;
+            font-size: 2rem;
+            line-height: 110%;
+            margin: 0.5rem 0rem;
+            font-weight: 700;
+        }
+        &-text{
+            font-size: 1rem;
+            color: rgba(75, 88, 98,0.7);
+            text-align: center;
+            margin: 0.5rem 0rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .section3{
+        padding: 5rem 10rem;
+        position: relative;
+        width: 100%;
+        
+    }
+    .section3-main{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+        &img{
+            
+            
+            img{
+                position: absolute;
+                left: 0px;
+                top: 5%;
+                width: 50rem;
+                margin-left: -20rem;
+            }
+        }
+    }
+    .section3-maincontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 5rem 0rem;
+        .content{
+            // margin: 5rem 0rem;
+            width: 60%;
+            height: 100%;
+            &-head{
+                color: var(--VeryDarkBlue);
+                text-align: left;
+                font-size: 2rem;
+                line-height: 110%;
+                margin: 0.5rem 0rem;
+                font-weight: 700;
+            }
+            &-text{
+                font-size: 1rem;
+                color: rgba(75, 88, 98,0.7);
+                text-align: left;
+                margin: 2rem 0rem;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .section3-main{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+        &img{
+            
+            
+            img{
+                position: absolute;
+                left: 0px;
+                top: 5%;
+                width: 50rem;
+                margin-left: -15rem;
+            }
+        }
+    }
+    .section3-maincontent{
+        
+        .content{
+            // margin: 5rem 0rem;
+            width: 70%;
+           
+        }
+    }
+}
